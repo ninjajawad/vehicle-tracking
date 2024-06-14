@@ -1,7 +1,11 @@
-// controllers/authController.js
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
+/*
+register: Checks if a user exists, hashes the password, and registers a new user.
+login: Verifies user credentials, compares hashed passwords, and generates a JWT token.
+logout: Sends a logout message.
+ */
 
 export const register = async (req, res) => {
     const { username, password } = req.body;

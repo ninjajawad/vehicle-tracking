@@ -1,4 +1,7 @@
 import mongoose from 'mongoose';
+/*
+Define a Vehicle schema with fields for vehicleId, position (latitude and longitude), timestamp, and immobile status. vehicleId must be unique.
+ */
 
 const VehicleSchema = new mongoose.Schema({
     vehicleId: { type: String, required: true, unique: true },

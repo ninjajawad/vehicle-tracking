@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+
   "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -18,5 +19,11 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.1",
     "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "chai-http": "^5.0.0",
+    "mocha": "^10.4.0",
+    "supertest": "^7.0.0"
   }
 }

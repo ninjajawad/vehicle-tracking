@@ -1,4 +1,7 @@
-// routes/auth.js
+/*
+Define routes for user registration, login, and logout, using express-validator to validate input data.
+ */
+
 import express from 'express';
 import { check, validationResult } from 'express-validator';
 import { register, login, logout } from '../controllers/authController.js';
@@ -38,3 +41,4 @@ router.post(
 router.post('/logout', logout);
 
 export default router;
+

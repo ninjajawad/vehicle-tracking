@@ -1,4 +1,7 @@
-// simulators/VehicleSimulator.js
+/*
+generateRandomPosition: Generates random latitude and longitude.
+start: Starts the vehicle simulation, updating vehicle positions or marking them as immobile and emitting relevant events
+ */
 import EventEmitter from 'events';
 
 class VehicleSimulator extends EventEmitter {
@@ -56,3 +59,4 @@ class VehicleSimulator extends EventEmitter {
 }
 
 export default VehicleSimulator;
+

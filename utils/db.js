@@ -1,4 +1,9 @@
 // utils/db.js
+/*
+ This script sets up the MongoDB connection using Mongoose.
+ It uses the URI from environment variables and prints a success message upon connection.
+ If it fails, an error message is logged, and the process exits.
+*/
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
@@ -15,3 +20,5 @@ const connectDB = async () => {
 };
 
 export default connectDB;
+
+

@@ -1,4 +1,7 @@
-// middlewares/authMiddleware.js
+/*
+Middleware to check if a valid JWT token is present in the request headers.
+If valid, it decodes the token and attaches the user ID to the request object.
+ */
 import jwt from 'jsonwebtoken';
 
 export default function (req, res, next) {
@@ -14,3 +17,4 @@ export default function (req, res, next) {
         res.status(401).json({ msg: 'Token is not valid' });
     }
 };
+
