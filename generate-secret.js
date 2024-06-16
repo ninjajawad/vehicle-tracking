@@ -1,4 +1,4 @@
-// generate-secret.js
+// generate-secret with JWT
 import crypto from 'crypto';
 
 const generateSecret = () => {
